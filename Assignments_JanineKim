@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Janine Kim - HW1 - The good, the bad, the ugly</title>    
+</head>
+<body>    
+    <h1>Website Critique</h1>
+    <h2>Typography</h2>
+    
+    <!--  =-=-=-=-=-=-=-=-=-=-=-= -->
+    <!--  Good Typography Example -->
+    <!--  =-=-=-=-=-=-=-=-=-=-=-= -->
+    
+    <div>
+        <h3>1. Good Typography</h3>        
+        <a href="http://www.designembraced.com/">
+            <img src="put the path to your image here" alt="good typography">
+        </a>
+        <p>
+            I like how this website arranged the letters,numbers, and markers in a very clean, easy to read away. It also created a unique character for itself using the typography.
+  
+        </p>
+    </div>
+
+    
+    <!--  =-=-=-=-=-=-=-=-=-=-=-= -->
+    <!--  Bad Typography Example -->
+    <!--  =-=-=-=-=-=-=-=-=-=-=-= -->
+    
+    <div>
+        <h3>2. Bad Typography</h3>        
+        <a href="http://www.gatesnfences.com/">
+            <img src="put the path to your image here" alt="bad typography">
+        </a>
+        <p>
+            I don't know where to look first on this website, the colors all clash, and the left sided panel has very blurry letters for some reason.
+        </p>
+    </div>    
+        
+
+</body>
+</html>
