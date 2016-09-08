@@ -1,0 +1,64 @@
+/* 
+CUSTOMIZE the following section as you wish
+Feel free to add additional styling if you wish
+*/
+
+.article {
+    
+}
+
+.section {
+    
+}
+
+.amendment {
+    
+}
+
+.emphasize {
+    
+}
+
+
+/* 
+  DO NOT MODIFY
+    BELOW HERE
+*/
+
+footer {
+    width: 8.2em;    
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    color: dimgrey;
+}
+
+footer a {
+    text-decoration: none;    
+    font-size: 1em;
+}
+
+footer a:last-child {
+    margin-left: 30px;
+}
+
+footer a:hover {
+    color: crimson;
+}
+
+nav {
+    display: inline;    
+}
+
+#backButton:before {
+/*    content: "\25C0 ";*/
+    content: "\2190 ";
+    font-size: 3em;
+}
+
+#nextButton:after {
+/*    content: "\25B6 ";*/
+    content: "\2192 ";
+    font-size: 3em;
+}
+
