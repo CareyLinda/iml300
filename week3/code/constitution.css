@@ -1,6 +1,10 @@
 /* 
+
 CUSTOMIZE the following section as you wish
 Feel free to add additional styling if you wish
+
+DO NOT CHANGE the class names
+
 */
 
 .article {
@@ -23,34 +27,49 @@ Feel free to add additional styling if you wish
     
 }
 
-/* 
-  DO NOT MODIFY
-    BELOW HERE
-*/
+
+/* --------------------------------------- */
+/*        DO NOT MODIFY BELOW HERE         */
+/* --------------------------------------- */
 
 footer {
-    width: 8.2em;    
     margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
     color: dimgrey;
+    vertical-align: top
 }
 
 footer a {
     text-decoration: none;    
-    font-size: 1em;
+    font-size: 1em;    
 }
 
-footer a:last-child {
-    margin-left: 30px;
+footer a span {
+    background-color: orange;            
+    font-size: 2em;
+    vertical-align: text-bottom
 }
+
 
 footer a:hover {
     color: crimson;
 }
 
 nav {
-    display: inline;    
+    font-family: serif
+}
+
+nav:first-child {
+    margin-left: 1em;
+    float: left;
+    display: inline; 
+    width: auto;
+}
+
+nav:last-child {
+    margin-right: 1em;
+    float: right;
 }
 
 #backButton:before {
