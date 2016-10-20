@@ -28,15 +28,34 @@ var studentColorList = [{ name:"tatiana", bgcolor:"#e2f7fd"},
 { name:"zoe", bgcolor:"#7EFFF4"}]        
 
 
+
+//var $tc = $("#testCard");
+//
+////alert($tc.children().length);
+//
+//$tc.css("background", "red");
+//$tc.append("<p> look at this jquery hotness</p>")
+//$tc.prepend(" <a href='http://duckduckgo.com'> Better Mo' private search</a> <br/>  ")
+//
+////alert($tc.children().length);
+//$tc.children().eq(3).text(" YO MAMA!!! ");
+
 // creating an element in jQuery
 
 //add an h2 to the results section
+
 var resultElem = "<h1>Results</h1>";
+var $card = $(".sc-1-4");
 
 $("main").prepend(resultElem);
 
 $(".sc-1-4").append("<div class='michelle student_card '></div><h2>michelle</h2>")
 
 $(".sc-1-4").append("<div class='zoe student_card '></div><h2>zoe</h2>")
+
+$(".sc-1-4").append("<div class='james student_card '></div><h2>tucker hiding as James</h2>")
+
+$card.children().eq(1).remove();
+//$card.empty();
 
 console.log( $(".sc-1-4").children().length);
