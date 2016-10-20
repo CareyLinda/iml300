@@ -1,6 +1,7 @@
 
 // get the button element
 $("#btnAdd").on("click", showMessage);
+<<<<<<< Updated upstream
 $("#btnClear").on("click", function() {
     $(".student_card").empty();
 } );
@@ -9,6 +10,22 @@ function showMessage() {
     $(".student_card").text("this is some text")
     $(".student_card").append("this is more text")
 }
+=======
+$("#btnClear").on("click", function(){
+    $(".student_card").empty();
+    $(".student_card").css("background", "red");
+});
+
+function showMessage() {
+//    alert("CLICK CLICK");
+//    $(".student_card").append(" <p>Hello </p> ");
+    $(".student_card").css("background", "blue");
+    $(".student_card").text(" Hi! ");
+
+
+    }
+
+>>>>>>> Stashed changes
 
 
 $(".student_card").on("mouseover", showMessage2)

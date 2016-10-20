@@ -27,6 +27,13 @@ var studentColorList = [{ name:"tatiana", bgcolor:"#e2f7fd"},
 { name:"michelle", bgcolor:"#FFF000"},
 { name:"zoe", bgcolor:"#7EFFF4"}]        
 
+var $tc = $("#testCard");
+$tc.css("background", "aliceblue");
+$tc.append("<p> look at this jquery hotness</p>");
+$tc.prepend("<a href='http://google.com'>Google></a> </br>");
+
+alert($tc.children().length);
+
 
 // creating an element in jQuery
 
