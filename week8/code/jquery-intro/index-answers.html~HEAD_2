@@ -100,22 +100,6 @@
 			</div>
 		</section>
 	</header>
-<<<<<<< HEAD:week8/code/jquery-intro/index-answers.html~origin_master
-=======
-	<main>
-    
-    <div id="testCard" class="sc-1-4">
-       <div class="student_card tatiana"></div>
-        <h2>Amanda</h2>
-    </div>
-    
-	    <div class="sc-1-4">
-	        <!-- this is empty and we will be adding the student card here -->	        
-	    </div>
-	</main>
-	<!--
-	
->>>>>>> origin/master:week9/code/01-createElements.html
 	<main role="main">
 		<section class="sc">
 			<div class="u-p-a">

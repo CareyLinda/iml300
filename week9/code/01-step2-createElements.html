@@ -5,117 +5,51 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/lib/w3.css">
 	<link rel="stylesheet" href="./css/landingPage.css">
+	
 	<link rel="shortcut icon" href="http://a-o-a.xyz//img/icon/fav.ico">
 	<link rel="icon" type="image/png" href="http://a-o-a.xyz//img/icon/fav-192x192.png" sizes="192x192">
 	<link rel="apple-touch-icon" href="http://a-o-a.xyz//img/icon/fav-180x180.png" sizes="180x180"> 
 	<title>IML 300 Student Landing Page</title>
 	
 	<script src="js/jquery-3.1.1.min.js"></script>
-	
-	<style>
-	.tatiana {
-		background: #e2f7fd;
-	}
-	.davis { 
-		background: #5500FF;
-	}
-	.noelle { /* 3 */
-		background: #E5E5E5;
-	}
-	.barbara { /* 4 */
-		background: #828282;
-	}
-	.ryan { 
-		background: #CC0000;
-	}
-	.morgan { 
-		background: #000000;
-	}
-	.kate { /* 7 */
-		background: #111111;
-	}
-	.james { 
-		background: #FFC661
-	}
-	.paxton { 
-		background: #F26722;
-	}
-	.hannah { /* 10 */
-		background: #404040;
-	}
-	.lily { /* 11 */
-		background: #6B6B6B;
-	}
-	.janine { 
-		background: #6499FF;
-	}
-	.yang { 
-		background: #4DDBFF;
-	}
-	.alison { 
-		background: #979BC5;
-	}
-	.alyssa { 
-		background: #CDFFF9;
-	}
-	.audey { 
-		background: #FF9900;
-	}
-	.audrey { 
-		background: #CCE0FF;
-	}        
-	.maya { 
-		background: #808080;
-	}
-	.mark {
-		background: #7E89A7;
-	}
-	.amanda {
-		background: #3434CB;
-	}
-	.michelle { 
-		background: #FFF000;
-	}
-    .zoe {
-		background: #7EFFF4;
-	}        
-	</style>
+    <style>
+        .hot { background: deeppink; }
+        .cool { background: black; }
+        
+        /* override hover effect for demo purposes */
+        .student_card:hover{-webkit-transform:scale(1.0);transform:scale(1.0);box-shadow:0 0 0 0px rgba(0,0,0,0)}
+    </style>
 </head>
-<body>
+<body class="w3-container">
 	<div class="logotype" role="presentation">300</div>
 	<header role="banner">
 		<section class="sc">
 			<div class="u-p-a">
 				<h1>
-					Student Landing Page
+					jQuery Event Handlers
 				</h1>
 				<h3>
-					IML 300, Fall 2016 &mdash; Rhazes Spell
+					Click the button...
 				</h3>
+				<button id="btnAdd" class="w3-button">Add</button>
+				<button id="btnClear" class="w3-button">Clear</button>
+				
 				<h3>
-					<a class="u-mr-a" href="https://mapwiki.sca.usc.edu/wiki/projects/iml300readingandwritingthewebfall2016section37420/IML_300_Reading_and_Writing_the_Web_Fall_2016_Section_37420.html">wiki</a>
-					<a class="u-mr-a" href="https://github.com/trojanmediaarts/iml300/wiki">github</a>
 				</h3>
+				
 			</div>
 		</section>
 	</header>
-<<<<<<< HEAD:week8/code/jquery-intro/index-answers.html~origin_master
-=======
 	<main>
-    
-    <div id="testCard" class="sc-1-4">
-       <div class="student_card tatiana"></div>
-        <h2>Amanda</h2>
-    </div>
-    
 	    <div class="sc-1-4">
+            <div class="student_card cool" ></div>
 	        <!-- this is empty and we will be adding the student card here -->	        
 	    </div>
 	</main>
 	<!--
 	
->>>>>>> origin/master:week9/code/01-createElements.html
 	<main role="main">
 		<section class="sc">
 			<div class="u-p-a">
@@ -323,29 +257,9 @@
 		</section>
 	</main>
 	
-	<script>
-        var $studentElem = $(".student_card")
-        console.log($studentElem.length + " student cards returned!!!");
-        $studentElem.css("background","mistyrose");
-        
-        var $test = $(".sc-1-4 h2").css("background", "green")
-        //var $test2 = $("div[class*=paxton]").css("background", "red");
-        
-        $(".student_card:odd").css("background", "yellow")
-        $studentElem.each( function(index, item) {
-            var classAttr = $(this).attr("class");
-            var student = classAttr.split(" ")[1];
-            if(student < "l") {
-                $(this).css("background", "khaki");
-            } else {
-                $(this).css("background", "rebeccapurple")
-            }
-            //console.log( student[1] );
-            
-        } );
-        
-
-        
-    </script>
+	-->
+	
+    <!-- load our javascript here -->
+    <script src="./js/01-step2-createElement.js"></script>         
 </body>
 </html>
