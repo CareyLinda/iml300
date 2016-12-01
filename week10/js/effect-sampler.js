@@ -1,10 +1,28 @@
+var $card = $("#card1");
+
+function itMightBeOverSoon() {
+$("#card1")
+    .animate( {width: "400px", left:"400px" }, 2000 )
+    .slideUp(2000)
+    .slideDown(200)
+    .animate({width: "200px", left:"-=400px"},500, itMightBeOverSoon);
+    
+}
+
+itMightBeOverSoon();
+
+
 console.log($("select option:selected").val())
+
+$("button").text("fade out");
 
 $("button").on("click", function() {
     var currentOption = $("select").children(":selected").val();
     
+    
+    
     if( currentOption == "fade") {
-        runFadeEffect();
+    runFadeEffect();
     } else if( currentOption == "toggle") {
         runToggleEffect();
     } else if( currentOption == "slide") {
@@ -18,14 +36,22 @@ $("button").on("click", function() {
     
 })
 
+function runthisWhenDone() {
+    console.log("I am done..now what?")
+}
+
 
 function runFadeEffect() {
     var visible = $("#card1").is(":visible");
     
     if(visible) {
-        $("#card1").fadeOut();
+        $("#card1").fadeOut( function() {
+            $("button").text("fade in");
+            
+        }); 
     } else {
-        $("#card1").fadeIn();        
+        $("#card1").fadeIn(runthisWhenDone); 
+         $("button").text("fade out");
     }
 }
 
@@ -40,9 +66,9 @@ function runSlideEffect() {
     var visible = $("#card1").is(":visible");
     
     if(visible) {
-        $("#card1").slideUp();
+        $("#card1").slideUp(2000);
     } else {
-        $("#card1").slideDown();        
+        $("#card1").slideDown(200);        
     }
 }
 

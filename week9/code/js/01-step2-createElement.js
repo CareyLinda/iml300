@@ -6,9 +6,14 @@ $("#btnClear").on("click", function() {
     $(".student_card").empty();
 } );
 
+<<<<<<< Updated upstream
 function showMessage() {    
     $(".student_card").text("this is some text")
     $(".student_card").append("this is more text")
+=======
+function showMessage() {
+    $(".student_card").text("this is the message")
+>>>>>>> Stashed changes
 }
 =======
 $("#btnClear").on("click", function(){

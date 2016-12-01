@@ -100,6 +100,27 @@
 			</div>
 		</section>
 	</header>
+<<<<<<< Updated upstream:week8/code/jquery-intro/index-answers.html
+=======
+	<main>
+    
+        <div id="testCard" class="sc-1-4">
+            <div class="student_card tatiana"></div>
+            <h2>Rhazes</h2>
+            
+            
+        </div>
+    
+    
+    
+	    <div class="sc-1-4">
+	        <!-- this is empty and we will be adding the student card here -->	        
+	    </div>
+	</main>
+	
+	<!--
+	
+>>>>>>> Stashed changes:week9/code/01-step1-createElements.html
 	<main role="main">
 		<section class="sc">
 			<div class="u-p-a">
@@ -139,7 +160,7 @@
 						</h2>
 					</a>
 				</div>
-
+-->
 				<div class="sc-1-4">
 					<a href="http://storm.usc.edu/~cenicola/iml300/">
 						<div class="student_card ryan"></div>
@@ -307,6 +328,7 @@
 		</section>
 	</main>
 	
+<<<<<<< Updated upstream:week8/code/jquery-intro/index-answers.html
 	<script>
         var $studentElem = $(".student_card")
         console.log($studentElem.length + " student cards returned!!!");
@@ -331,5 +353,11 @@
 
         
     </script>
+=======
+	
+	
+    <!-- load our javascript here -->
+    <script src="./js/01-step1-createElement.js"></script>         
+>>>>>>> Stashed changes:week9/code/01-step1-createElements.html
 </body>
 </html>

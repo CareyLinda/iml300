@@ -25,8 +25,18 @@ var studentColorList = [{ name:"tatiana", bgcolor:"#e2f7fd"},
 { name:"mark", bgcolor:"#7E89A7"},
 { name:"amanda", bgcolor:"#3434CB"},
 { name:"michelle", bgcolor:"#FFF000"},
-{ name:"zoe", bgcolor:"#7EFFF4"}]        
+{ name:"zoe", bgcolor:"#7EFFF4"}]     
 
+var $tc = $tc = $("#testCard");
+
+alert($tc.children().length);
+
+$tc.css("#testCard").css("background","red");
+$tc.append("#testCard").append("<p> look at this hotness</p>");
+$tc.prepend("testCard").prepend(" <a href='http://duckduckgo.com'> Better Mo' private search</a> <br/> ")
+
+alert($tc.children().length);
+$tc.children().eq(3).text(" hey ");
 
 
 //var $tc = $("#testCard");

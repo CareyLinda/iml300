@@ -1,13 +1,29 @@
 //A flag to let us know what state the div is in
-var up = false;
+var hidden = false;
+
+
 $("#btnMove").on("click", function() {    
-    if(!up) {
-        $("#card1").slideUp();
+    if(!hidden) {
+        $("#card1").hide();
         // toggle the flag because it is slid up now
-        up = true;
+        hidden = true;
     } else {
-        $("#card1").slideDown();
+        $("#card1").show();
         // toggle the flag because it is slid down now
-        up = false;
+        hidden = false;
     }
 })
+
+$("#buttonOne").on("click", function() {
+    if(!coloron) {
+        $("#boxOne").css("background-color", "#7EFFF4");
+        coloron = true;
+        } else {
+            $("#boxOne").css("background-color", "white");
+            coloron = false;
+        }
+    
+})
+                   
+                   
+                   
